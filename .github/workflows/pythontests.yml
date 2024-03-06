@@ -27,6 +27,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.x  # Adjust this to match your Python version
+          
+      - name: Copy StringCalculator folder
+        run: cp -r StringCalculator $GITHUB_WORKSPACE/
 
       - name: Run unit tests
         run: python -m unittest unit_tests.py
