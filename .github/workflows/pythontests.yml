@@ -29,4 +29,5 @@ jobs:
           python-version: 3.x  # Adjust this to match your Python version
           
       - name: Run unit tests
-        run: python -m unittest StringCalculator/unit_tests.py
+        working-directory: ./StringCalculator
+        run: python -m unittest unit_tests.py

@@ -22,12 +22,12 @@ class TestStringCalculator(unittest.TestCase):
     
     def test_two_numbers_comma_delimited(self):
         # given
-        num = "2,3"
+        num = "2,4"
         calculator = StringCalculator()
         # when
         result = calculator.calculate(num)
         # then
-        self.assertEqual(result, 5)
+        self.assertEqual(result, 6)
 
     def test_two_numbers_newline_delimited(self):
         # given
