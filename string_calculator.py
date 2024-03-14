@@ -2,6 +2,7 @@ import re
 
 class StringCalculator:
     def calculate(self,arg):
+        # dummy change
         if not arg:
             return 0 # an empty sting retums zero
         delimiter = ',' 
